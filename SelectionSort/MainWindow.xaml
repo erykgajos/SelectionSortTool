@@ -1,0 +1,44 @@
+﻿<Window x:Class="SelectionSort.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SelectionSort"
+        mc:Ignorable="d"
+        Title="Selection Sort - Task 11, Programming Paradigms, Eryk Gajos" Height="450" Width="800">
+    <Grid>
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="20*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="mainArrayTextBox" Margin="10,5" TextAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="Wrap" Text="TextBox" Grid.ColumnSpan="2" FontSize="15"/>
+
+            <Button x:Name="Button1" Content="Selection Sort" Margin="5" Grid.Row="1" FontSize="20" Click="Button1_Click" />
+            <Label x:Name="Result1" Content="Result1" Grid.Column="1" Margin="5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Grid.Row="1"/>
+
+            <Button x:Name="Button2" Content="Selection Sort&#x0a;(with dividing into half)" Margin="5" Grid.Row="2" FontSize="20" Click="Button2_Click" />
+            <Label x:Name="Result2" Content="Result2" Grid.Column="1" Margin="5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Grid.Row="2"/>
+
+            <Button x:Name="Button3" Margin="5" Grid.Row="3" FontSize="20" Click="Button3_Click" >
+                <TextBlock Text="Selection sort (sorting two halves conccurently)" TextWrapping="Wrap" TextAlignment="Center" />
+            </Button>
+            <Label x:Name="Result3" Content="Result3" Grid.Column="1" Margin="5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Grid.Row="3"/>
+            <Button x:Name="Button4" Margin="5" Grid.Row="4" FontSize="20" Click="Buttonk4_Click" >
+                <TextBlock Text="Selection sort (sorting two halves parallel)" TextWrapping="Wrap" TextAlignment="Center" />
+            </Button>
+            <Label x:Name="Result4" Content="Result4" Grid.Column="1" Margin="5" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Grid.Row="4"/>
+
+            <TextBox x:Name="ResultTableTextBox" Grid.Row="5" Margin="10,5" TextAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextWrapping="Wrap" Text="SORTED TABLE" Grid.ColumnSpan="2" FontSize="15"/>
+        </Grid>
+
+    </Grid>
+</Window>
